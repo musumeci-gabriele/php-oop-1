@@ -21,16 +21,20 @@
       }
     }
 
-
+    // funzione costruttore per modificare il valore di sconto
+    function _costructor($scontoCondominio)
+    {
+      $this->scontoCondominio = $scontoCondominio;
+    }
 
   }
 
 
   // Utenti del Condominio
   $int1 = new Vicini("Gabriele", "Musumeci", 21, sconto());
-  $int2 = new Vicini("Gino", "Alibaba", 30, sconto());
-  $int3 = new Vicini("Maurizio", "Bau", 39, sconto());
-  $int4 = new Vicini("Alfonzo", "Pascucci", 5, sconto());
+  // $int2 = new Vicini("Gino", "Alibaba", 30, sconto());
+  // $int3 = new Vicini("Maurizio", "Bau", 39, sconto());
+  // $int4 = new Vicini("Alfonzo", "Pascucci", 5, sconto());
 
   $condominio = [$int1, $int2, $int3, $int4];
 
