@@ -31,7 +31,7 @@
 
 
   // Utenti del Condominio
-  $int1 = new Vicini("Gabriele", "Musumeci", 21, sconto());
+  $int1 = new Vicini("Gabriele", "Musumeci", 21, sconto(21));
   // $int2 = new Vicini("Gino", "Alibaba", 30, sconto());
   // $int3 = new Vicini("Maurizio", "Bau", 39, sconto());
   // $int4 = new Vicini("Alfonzo", "Pascucci", 5, sconto());
