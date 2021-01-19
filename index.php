@@ -53,32 +53,39 @@
     <title>OOP</title>
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
-    <table>
-      <!-- intestazione tabella -->
-      <thead>
-        <tr>
-          <th>Nome</th>
-          <th>Cognome</th>
-          <th>Anzianita'</th>
-          <th>Sconto</th>
-        </tr>
-      </thead>
-      <!--// intestazione tabella -->
 
-      <!-- corpo tabella -->
-      <tbody>
-        <?php foreach ($condominio as $condomine): ?>
+    <div class="container">
+      <H1>Tabella dei condomini che hanno lo sconto per anzianita'.</H1>
+      <table>
+        <!-- intestazione tabella -->
+        <thead>
           <tr>
-            <td><?php echo $condomine->nome; ?></td>
-            <td><?php echo $condomine->cognome; ?></td>
-            <td><?php echo $condomine->anzianita; ?></td>
-            <td><?php echo $condomine->scontoCondominio; ?></td>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Anzianita'</th>
+            <th>Sconto</th>
           </tr>
-        <?php endforeach ?>
+        </thead>
+        <!--// intestazione tabella -->
 
-      </tbody>
-    <!--// corpo tabella -->
-    </table>
+        <!-- corpo tabella -->
+        <tbody>
+
+          <?php foreach ($condominio as $condomine): ?>
+            <tr>
+              <td><?php echo $condomine->nome; ?></td>
+              <td><?php echo $condomine->cognome; ?></td>
+              <td><?php echo $condomine->anzianita; ?></td>
+              <td><?php echo $condomine->scontoCondominio; ?></td>
+            </tr>
+          <?php endforeach ?>
+
+        </tbody>
+        <!--// corpo tabella -->
+      </table>
+    </div>
+    
   </body>
 </html>
